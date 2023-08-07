@@ -1,7 +1,6 @@
 #pragma once
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "common.h"
 
 typedef struct Node Node;
 
@@ -12,7 +11,7 @@ struct Node{
 
 int get_count(Node* head);
 void print_list(Node* head);
-void push(Node* head, int data);
+void append(Node* head, int data);
 int pop_last(Node* head);
 int pop_first(Node** head);
 void insert_front(Node** head, int data);

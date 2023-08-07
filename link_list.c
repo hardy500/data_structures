@@ -19,7 +19,7 @@ void print_list(Node* head) {
   puts("");
 }
 
-void push(Node* head, int data) {
+void append(Node* head, int data) {
   // Create new node
   Node* new_node = NULL;
   new_node       = (Node*)malloc(sizeof(Node));
