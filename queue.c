@@ -15,6 +15,8 @@ void de_queue(Queue* q) {
   if (q->front == -1) {
     printf("Queue is empty\n");
   } else {
+    // NOTE: we actually dont delete it, the value is still in
+    // memory. We just move the pointer forword
     printf("delete: %d\n", q->items[q->front]);
     q->front++;
     if (q->front > q->rear)
